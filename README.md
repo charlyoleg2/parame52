@@ -41,7 +41,7 @@ npm run preview
 Other useful commands:
 ```bash
 npm run clean
-npm run ls-pkg
+npm run ls-workspaces
 npm -w desi52 run check
 npm -w desi52 run build
 npm -w desiXY-ui run dev
