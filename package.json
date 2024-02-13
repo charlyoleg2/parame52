@@ -27,6 +27,7 @@
 	},
 	"scripts": {
 		"degit_paxApps": "degit https://github.com/charlyoleg2/parame_paxApps/paxApps paxApps",
+		"clean_paxApps": "shx rm -fr paxApps",
 		"desi52:dev": "npm -w desi52 run dev",
 		"desi52:ci": "npm -w desi52 run ci",
 		"desi52:svgo": "npm -w desi52 run svgo",
