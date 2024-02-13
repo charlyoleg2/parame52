@@ -1,0 +1,66 @@
+{
+	"name": "parame52",
+	"version": "0.5.1",
+	"description": "parame52's file structure can be used as template for creating new geometrix design libraries",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/charlyoleg2/parame52.git"
+	},
+	"homepage": "https://github.com/charlyoleg2/parame52",
+	"keywords": [
+		"cad",
+		"programmatic",
+		"2D",
+		"circle",
+		"stroke",
+		"arc",
+		"gear"
+	],
+	"author": "charlyoleg2",
+	"paxApps": {
+		"colorBg": "DarkCyan",
+		"colorTitle": "aquamarine",
+		"libs": [
+			"desi52"
+		]
+	},
+	"scripts": {
+		"desi52:dev": "npm -w desi52 run dev",
+		"desi52:ci": "npm -w desi52 run ci",
+		"desi52:svgo": "npm -w desi52 run svgo",
+		"desi52:clean": "npm -w desi52 run clean",
+		"desi52:version": "npm -w desi52 version patch",
+		"desi52:publish": "npm -w desi52 publish --provenance",
+		"paxScr:cirun": "npm -w paxScr run cirun",
+		"paxScr:brun": "npm -w paxScr run brun",
+		"paxScr:clean": "npm -w paxScr run clean",
+		"paxScr:version": "npm -w paxScr version patch",
+		"desiXY-ui:dev": "npm -w desiXY-ui run dev",
+		"desiXY-ui:ci": "npm -w desiXY-ui run ci",
+		"desiXY-ui:clean": "npm -w desiXY-ui run clean",
+		"desiXY-ui:preview": "npm -w desiXY-ui run preview",
+		"desiXY-ui:version": "npm -w desiXY-ui version patch",
+		"desiXY-cli:ci": "npm -w desiXY-cli run ci",
+		"desiXY-cli:clean": "npm -w desiXY-cli run clean",
+		"desiXY-cli:version": "npm -w desiXY-cli version patch",
+		"dev": "run-p desi52:dev desiXY-ui:dev",
+		"ci": "run-s desi52:ci paxScr:cirun desiXY-ui:ci desiXY-cli:ci",
+		"svgo": "run-s desi52:svgo",
+		"clean-root": "shx rm -fr tmp output output2",
+		"clean": "run-s clean-root desi52:clean paxScr:clean desiXY-ui:clean desiXY-cli:clean",
+		"preview": "run-s desiXY-ui:preview",
+		"versions": "run-s desi52:version paxScr:version desiXY-cli:version desiXY-ui:version",
+		"gh-publish": "run-s desi52:publish",
+		"ls-workspaces": "npm -ws exec -c pwd"
+	},
+	"workspaces": [
+		"desi52",
+		"paxApps/*"
+	],
+	"type": "module",
+	"devDependencies": {
+		"npm-run-all": "^4.1.5",
+		"shx": "^0.3.4"
+	}
+}
