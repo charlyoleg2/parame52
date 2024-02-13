@@ -31,7 +31,8 @@ Getting started
 git clone https://github.com/charlyoleg2/parame52
 cd parame52
 npm i
-npm run install_paxApps
+npm run clean_paxApps
+npm run degit_paxApps
 npm i
 npm run ci
 npm run preview
