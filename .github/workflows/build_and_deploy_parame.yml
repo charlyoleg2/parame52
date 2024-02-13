@@ -30,7 +30,10 @@ jobs:
                   registry-url: 'https://registry.npmjs.org/'
 
             - name: clean and install
-              run: npm ci
+              run: |
+                  npm ci
+                  npm run degit_paxApps
+                  npm i
 
             - name: Build and check ParameXY
               env:
