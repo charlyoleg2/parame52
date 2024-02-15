@@ -32,7 +32,8 @@ git clone https://github.com/charlyoleg2/parame52
 cd parame52
 npm i
 npm run clean_paxApps
-npm run degit_paxApps
+npm run install_paxApps
+rm -fr node_modules
 npm i
 npm run ci
 npm run preview
