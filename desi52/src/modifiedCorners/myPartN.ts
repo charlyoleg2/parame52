@@ -99,17 +99,17 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 			const pc5 = point(0, 0).translatePolar(aOffset + Math.PI / 2, R2);
 			ctrCross
 				.addPointA(pc2.cx, pc2.cy)
-				.addSegArc3(Math.PI + degToRad(param.AS), true)
+				.addSegArc3(aOffset + degToRad(param.AS), true)
 				.addCornerRounded(param.RC1)
 				.addPointA(pc3.cx, pc3.cy)
-				.addSegArc3((5 * Math.PI) / 4 - degToRad(param.AL), false)
+				.addSegArc3(aOffset + Math.PI / 4 - degToRad(param.AL), false)
 				.addCornerWidened(param.RC2)
 				.addPointA(pc4.cx, pc4.cy)
-				.addSegArc3((5 * Math.PI) / 4 + degToRad(param.AL), true)
+				.addSegArc3(aOffset + Math.PI / 4 + degToRad(param.AL), true)
 				.addCornerWideAcc(param.RC3)
 				.addPointA(pc5.cx, pc5.cy)
-				.addSegArc3((3 * Math.PI) / 2 - degToRad(param.AS), false)
-				.addCornerRounded(param.RC3);
+				.addSegArc3(aOffset + Math.PI / 2 - degToRad(param.AS), false)
+				.addCornerRounded(param.RC4);
 		}
 		//ctrCross.closeSegStroke();
 		fig1.addMain(ctrCross);
