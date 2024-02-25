@@ -42,7 +42,7 @@ const pDef: tParamDef = {
 		pNumber('RC1', 'mm', 2, 0, 30, 1),
 		pNumber('RC2', 'mm', 2, 0, 30, 1),
 		pNumber('RC3', 'mm', 2, 0, 30, 1),
-		pNumber('RC4', 'mm', 2, 0, 30, 1),
+		pNumber('RC4', 'mm', 2, 0, 30, 1)
 	],
 	paramSvg: {
 		D1: 'myPartN_face.svg',
