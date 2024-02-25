@@ -217,7 +217,7 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 // step-11 : definiton of the final object that gathers the precedent object and function
 const myPartMDef: tPageDef = {
 	pTitle: 'My Part-M',
-	pDescription: 'A simple design for illustration the three ways for defining arcs',
+	pDescription: 'A Scout-cross for illustration the three ways for defining arcs',
 	pDef: pDef,
 	pGeom: pGeom
 };
