@@ -85,6 +85,7 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 				.addSegStrokeAP(aOffset + Math.PI / 2 - aL12, R3)
 				.addSegStrokeAP(aOffset + Math.PI / 2, R2);
 		}
+		//ctrCross.closeSegStroke();
 		fig1.addMain(ctrCross);
 		// final figure list
 		rGeome.fig = {
