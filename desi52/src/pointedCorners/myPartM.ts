@@ -18,7 +18,7 @@ import {
 	//contourCircle,
 	figure,
 	degToRad,
-	//radToDeg,
+	radToDeg,
 	ffix,
 	pNumber,
 	//pCheckbox,
@@ -86,7 +86,7 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 			throw `err295: L1 ${param.L1} is too large compare to D3 ${param.D3}`;
 		}
 		// step-6 : any logs
-		rGeome.logstr += `myPartM: aL12 ${ffix(aL12)} degree\n`;
+		rGeome.logstr += `myPartM: aL12 ${ffix(radToDeg(aL12))} degree\n`;
 		// step-7 : drawing of the figures
 		// fig1
 		const ctrCross = contour(R2, 0);
