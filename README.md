@@ -5,23 +5,36 @@ Parame52
 Presentation
 ------------
 
-*Parame52* constains the *geometrix design* library *desi52*, which  belongs to the *parametrix* tutorial. The file structure of *parame52* can be used as template for creating other *geometrix design libraries*.
+*Parame52* is the top-monorepo of the design-library *desi52*.
+This design-library is part of the *parametrix* tutorial.
 
-This is the monorepo that contains a single *javascript* packages:
+This repo is a designer-repository using [parametrix](https://charlyoleg2.github.io/parametrix/).
+The file structure of *parame52* can be used as template for creating other *design-libraries*.
+In particular, if you want to create a single *design-library* in your mono-repository.
 
-1. desi52: a simple library of 3D-parts using *geometrix*
+This monorepo contains one *javascript* package:
 
-The *UI* and *Cli* apps are generated automatically within *paxApps*.
+1. desi52: a library of 3D-parts using *geometrix*
+
+The *UI* and *Cli* apps are generated automatically with [paxApps](https://github.com/charlyoleg2/parame_paxApps).
 
 A public instance of *desiXY-ui* is available on that [github-page](https://charlyoleg2.github.io/parame52/).
 The *code source* is available on [github](https://github.com/charlyoleg2/parame52).
+
+
+Links
+-----
+
+- [desi52-ui](https://charlyoleg2.github.io/parame52/) : public instance of the UI
+- [sources](https://github.com/charlyoleg2/parame52) : git-repository
+- [desi52-pkg](https://www.npmjs.com/package/desi52) : desi52 as npm-package
 
 
 Prerequisite
 ------------
 
 - [node](https://nodejs.org) version 20.10.0 or higher
-- [npm](https://docs.npmjs.com/cli/v7/commands/npm) version 10.2.4 or higher
+- [npm](https://docs.npmjs.com/cli/v7/commands/npm) version 10.5.0 or higher
 
 
 Getting started
@@ -48,4 +61,15 @@ npm -w desi52 run build
 npm -w desiXY-ui run dev
 ```
 
+Publish a new release
+---------------------
 
+```bash
+npm run versions
+vim scr/patchPaxApps.patch
+git diff
+git commit -am 'increment sub versions'
+npm version patch
+git push
+git push origin v0.5.6
+```

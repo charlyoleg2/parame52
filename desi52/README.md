@@ -5,7 +5,16 @@ Desi52
 Presentation
 ------------
 
-*Desi52* is part of the tutorial for *geometrix design library*.
+*Desi52* is design-library using [geometrix](https://www.npmjs.com/package/geometrix).
+*Desi52* contains designs used in the [tutorial](https://charlyoleg2.github.io/parametrix/docs/geom_tutorial) of *geometrix*.
+
+
+Links
+-----
+
+- [desi52-ui](https://charlyoleg2.github.io/parame52/) : public instance of the UI
+- [sources](https://github.com/charlyoleg2/parame52) : git-repository
+- [desi52-pkg](https://www.npmjs.com/package/desi52) : desi52 as npm-package
 
 
 Getting started
