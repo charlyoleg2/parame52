@@ -4,6 +4,7 @@
 // step-1 : import from geometrix
 import type {
 	//tContour,
+	//tOuterInner,
 	tParamDef,
 	tParamVal,
 	tGeom,
@@ -118,9 +119,9 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 		fig1.addPoint(pi23);
 		fig1.addPoint(pi34);
 		fig1.addPoint(pi45);
-		//fig1.addMain(contourCircle(0, 0, R1));
-		//fig1.addMain(contourCircle(0, 0, R2));
-		//fig1.addMain(contourCircle(0, 0, R3));
+		//fig1.addMainO(contourCircle(0, 0, R1));
+		//fig1.addMainO(contourCircle(0, 0, R2));
+		//fig1.addMainO(contourCircle(0, 0, R3));
 		ctrCross
 			.addPointA(pi12.cx, pi12.cy)
 			.addPointA(pc2.cx, pc2.cy)
@@ -175,7 +176,7 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 			.addSegArc(param.RL, false, false)
 			.closeSegArc(param.RS, false, true);
 		//ctrCross.closeSegStroke();
-		fig1.addMain(ctrCross);
+		fig1.addMainO(ctrCross);
 		// final figure list
 		rGeome.fig = {
 			face1: fig1

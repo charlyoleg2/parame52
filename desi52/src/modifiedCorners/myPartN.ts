@@ -4,6 +4,7 @@
 // step-1 : import from geometrix
 import type {
 	//tContour,
+	//tOuterInner,
 	tParamDef,
 	tParamVal,
 	tGeom,
@@ -113,7 +114,7 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 				.addCornerRounded(param.RC4);
 		}
 		//ctrCross.closeSegStroke();
-		fig1.addMain(ctrCross);
+		fig1.addMainO(ctrCross);
 		// final figure list
 		rGeome.fig = {
 			face1: fig1
