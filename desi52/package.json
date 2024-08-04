@@ -1,6 +1,6 @@
 {
 	"name": "desi52",
-	"version": "0.5.6",
+	"version": "0.5.7",
 	"description": "A dummy geometrix-design-library for testing desiXY-ui and desiXY-cli",
 	"private": false,
 	"repository": {
