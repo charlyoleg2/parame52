@@ -5,48 +5,56 @@ Parame52
 Presentation
 ------------
 
-*Parame52* is the top-monorepo of the design-library *desi52*.
-This design-library is part of the *parametrix* tutorial.
+*Parame52* is the top-monorepo for the design-library *desi52*, which contains a collection of 3D shapes.
 
-This repo is a designer-repository using [parametrix](https://charlyoleg2.github.io/parametrix/).
-The file structure of *parame52* can be used as template for creating other *design-libraries*.
-In particular, if you want to create a single *design-library* in your mono-repository.
+This monorepo contains the following *javascript* package:
 
-This monorepo contains one *javascript* package:
+1. desi52: a *parametrix* design library
+2. desi52-cli: the cli of desi52
+3. desi52-ui: the web-ui of desi52
+4. desi52-uis: the web-server of desi52-ui
 
-1. desi52: a library of 3D-parts using *geometrix*
-
-The *UI* and *Cli* apps are generated automatically with [paxApps](https://github.com/charlyoleg2/parame_paxApps).
-
-A public instance of *desiXY-ui* is available on that [github-page](https://charlyoleg2.github.io/parame52/).
-The *code source* is available on [github](https://github.com/charlyoleg2/parame52).
+This repo is a typical designer-repository using [parametrix](https://charlyoleg2.github.io/parametrix/).
+The design-library and its associated UI and CLI are published as *npm-packages*.
+The UI is also available on the github-page.
 
 
 Links
 -----
 
-- [desi52-ui](https://charlyoleg2.github.io/parame52/) : public instance of the UI
-- [sources](https://github.com/charlyoleg2/parame52) : git-repository
-- [desi52-pkg](https://www.npmjs.com/package/desi52) : desi52 as npm-package
+- [desi52-ui](https://MYNAME.github.io/parame52/) : public instance of the UI
+- [sources](https://github.com/MYNAME/parame52) : git-repository
+- [pkg](https://www.npmjs.com/package/desi52) : desi52 as npm-package
+- [pkg-cli](https://www.npmjs.com/package/desi52-cli) : desi52-cli as npm-package
+- [pkg-uis](https://www.npmjs.com/package/desi52-uis) : desi52-uis as npm-package
 
+This design-library is part of the *parametrix* tutorial.
 
-Prerequisite
-------------
+Usage for Makers
+----------------
 
-- [node](https://nodejs.org) version 20.10.0 or higher
-- [npm](https://docs.npmjs.com/cli/v7/commands/npm) version 10.5.0 or higher
+Parametrize and generate your 3D-files with the online-app:
 
+[https://MYNAME.github.io/parame52/](https://MYNAME.github.io/parame52/)
 
-Getting started
----------------
+Or use the UI locally:
+
+```bash
+npx desi52-uis
+```
+
+Or use the command-line-interface (CLI):
+
+```bash
+npx desi52-cli
+```
+
+Getting started for Dev
+-----------------------
 
 ```bash
 git clone https://github.com/charlyoleg2/parame52
 cd parame52
-npm i
-npm run clean_paxApps
-npm run install_paxApps
-rm -fr node_modules
 npm i
 npm run ci
 npm run preview
@@ -58,16 +66,21 @@ npm run clean
 npm run ls-workspaces
 npm -w desi52 run check
 npm -w desi52 run build
-npm -w desiXY-ui run dev
+npm -w desi52-ui run dev
 ```
+
+Prerequisite
+------------
+
+- [node](https://nodejs.org) version 20.10.0 or higher
+- [npm](https://docs.npmjs.com/cli/v7/commands/npm) version 10.5.0 or higher
+
 
 Publish a new release
 ---------------------
 
 ```bash
 npm run versions
-vim scr/patchPaxApps.patch
-git diff
 git commit -am 'increment sub versions'
 npm version patch
 git push
