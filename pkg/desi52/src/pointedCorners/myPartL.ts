@@ -1,5 +1,5 @@
 // myPartL.ts
-// a Maltese-cross to illustrate the usage of the generic UI-app desiXY-ui and the generic CLI-app desiXY-cli
+// a Maltese-cross
 
 // step-1 : import from geometrix
 import type {
@@ -131,8 +131,7 @@ function pGeom(t: number, param: tParamVal, suffix = ''): tGeom {
 // step-11 : definiton of the final object that gathers the precedent object and function
 const myPartLDef: tPageDef = {
 	pTitle: 'My Part-L',
-	pDescription:
-		'A simple design for illustration the usage of the generic apps (desiXY-cli and desiXY-ui)',
+	pDescription: 'A Maltese cross',
 	pDef: pDef,
 	pGeom: pGeom
 };
