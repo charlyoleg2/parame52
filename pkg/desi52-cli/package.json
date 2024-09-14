@@ -55,7 +55,7 @@
 		"clean": "shx rm -fr build dist node_modules"
 	},
 	"dependencies": {
-		"desi52": "^0.1.0",
+		"desi52": "^0.5.7",
 		"geomcli": "^0.5.51",
 		"geometrix": "^0.5.48"
 	},

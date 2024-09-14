@@ -32,7 +32,7 @@
 		"clean": "shx rm -fr .svelte-kit build node_modules static/pgdsvg"
 	},
 	"dependencies": {
-		"desi52": "^0.1.0",
+		"desi52": "^0.5.7",
 		"geometrix": "^0.5.48",
 		"geomui": "^0.5.50"
 	},
