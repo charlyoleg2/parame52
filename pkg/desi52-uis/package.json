@@ -22,7 +22,9 @@
 			"default": "./dist/desi52-uis.js"
 		}
 	},
-	"bin": "dist/desi52-uis.js",
+	"bin": {
+		"desi52-uis": "dist/desi52-uis.js"
+	},
 	"files": [
 		"dist/",
 		"!dist/**/*.d.ts",
