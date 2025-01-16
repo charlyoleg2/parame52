@@ -1,6 +1,6 @@
 {
 	"name": "parame52",
-	"version": "0.5.12",
+	"version": "0.5.13",
 	"description": "The mono-repo for desi52, desi52-cli, desi52-ui and desi52-uis",
 	"private": true,
 	"repository": {
