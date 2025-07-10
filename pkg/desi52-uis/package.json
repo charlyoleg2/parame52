@@ -1,7 +1,7 @@
 {
 	"name": "desi52-uis",
 	"description": "feli-package desi52-uis for installing locally the web-ui desi52-ui",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"private": false,
 	"repository": {
 		"type": "git",
